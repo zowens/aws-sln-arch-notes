@@ -4,7 +4,7 @@ Because maybe you'll find this useful?
 ## High-Level Topics
 
 * [High Availability and Business Continuity](ha.md)
-* [Costing](costing.hd)
+* [Costing](costing.md)
 * Deployment Management
 * Network Design
 * Data Storage
