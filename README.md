@@ -15,7 +15,7 @@ Because maybe you'll find this useful?
 ## Service-Specific Notes
 * EC2/EBS
 * Autoscaling/ELB
-* VPC/Direct Connect
+* [VPC/VPN/Direct Connect](vpc.md)
 * IAM
 * S3/Glacier
 * Route53
