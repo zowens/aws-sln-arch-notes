@@ -9,7 +9,7 @@ Because maybe you'll find this useful?
 * Network Design
 * Data Storage
 * [Security](security.md)
-* Scalability and Elasticity
+* [Scalability and Elasticity](scalability.md)
 * Cloud Migration and Hybrid Architecture
 
 ## Service-Specific Notes
