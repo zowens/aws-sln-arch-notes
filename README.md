@@ -6,7 +6,7 @@ Because maybe you'll find this useful?
 * [High Availability and Business Continuity](ha.md)
 * [Costing](costing.md)
 * Deployment Management
-* Network Design
+* [Network Design](vpc.md)
 * Data Storage
 * [Security](security.md)
 * [Scalability and Elasticity](scalability.md)

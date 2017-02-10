@@ -42,11 +42,39 @@
 * IPSec
 * Needs route added to routing table for connectivity
 * 2 modes: BGP or static routes (prefix)
+* Hardware VPN
+    * DC -> AWS
+    * Automatic failover on AWS side
+    * Reuses existing equipment
+    * Must implement failover in DC
+    * Variability in Internet conditions
+    * Single-hop BGP
+* Software VPN
+    * Self-managed VPN inside of EC2
+* Software VPN -> Hardware VPN
+    * Software VPN in 1 VPC -> VGW in another VPC
+* AWS VPN CloudHub
+    * Hub-and-spoke model for remote office connectivity
+    * Utilizes VPG within 1 VPC for redundancy 
+    * The "spokes" must implement redundancy (e.g. remote offices)
+* DirectConnect + VPN
+    * More secure connection over DirectConnect?
+
+## DirectConnect
+* Dedicated network over private lines
+* 1 to 10 GBPS
+* BGP peering
+* Uses VLAN 
+* No redundancy, must add second connection
 
 ## ClassicLink
 * Allows EC2 classic instances to obtain VPC SGs and communicate with VPC instances
+* Does not become member of the VPC
+* DNS does not resolve to private IP of the instance within VPC
 * VPC needs to have ClassicLink enabled
-* Can be used with peering
+* Cannot reach VPC peers, not compatible with VPG connections
+* Strange restriction:
+    * VPC cannot have CIDR in 10.0.0.0/8 range, except 10.0.0.0/16 and 10.1.0.0/16
 
 ## Links
 [Practical VPC Design](https://medium.com/aws-activate-startup-blog/practical-vpc-design-8412e1a18dcc)
