@@ -17,7 +17,7 @@ Because maybe you'll find this useful?
 * Autoscaling/ELB
 * [VPC/VPN/Direct Connect](vpc.md)
 * IAM
-* S3/Glacier
+* [S3/Glacier](s3.md)
 * Route53
 * Cloudformation/Elastic Beanstalk
 * Cloudfront/WAF
