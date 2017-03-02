@@ -5,7 +5,7 @@ Because maybe you'll find this useful?
 
 * [High Availability and Business Continuity](ha.md)
 * [Costing](costing.md)
-* Deployment Management
+* [Deployment Management](deployment_management.md)
 * [Network Design](vpc.md)
 * Data Storage
 * [Security](security.md)
@@ -19,7 +19,7 @@ Because maybe you'll find this useful?
 * IAM
 * [S3/Glacier](s3.md)
 * Route53
-* Cloudformation/Elastic Beanstalk
+* [Cloudformation/Elastic Beanstalk](deployment_management.md)
 * Cloudfront/WAF
 * Elasticache
 * RDS
