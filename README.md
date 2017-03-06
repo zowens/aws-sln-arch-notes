@@ -7,26 +7,26 @@ Because maybe you'll find this useful?
 * [Costing](costing.md)
 * [Deployment Management](deployment_management.md)
 * [Network Design](vpc.md)
-* Data Storage
+* [Data Storage](datastorage.md)
 * [Security](security.md)
 * [Scalability and Elasticity](scalability.md)
 * Cloud Migration and Hybrid Architecture
 
 ## Service-Specific Notes
-* EC2/EBS
+* EC2/[EBS](datastorage.md#EBS)
 * Autoscaling/ELB
 * [VPC/VPN/Direct Connect](vpc.md)
 * IAM
 * [S3/Glacier](s3.md)
 * Route53
 * [Cloudformation/Elastic Beanstalk](deployment_management.md)
-* Cloudfront/WAF
-* Elasticache
-* RDS
+* [Cloudfront](scalability.md#Cloudfront)/WAF
+* [Elasticache](scalability.md#Elasticache)
+* [RDS](datastorage.md#RDS)
 * SNS/SQS
 * ECS
 * KMS
-* Redshift
+* [Redshift](datastorage.md#Redshift)
 * EMR
 
 ## Sources
