@@ -26,8 +26,8 @@
         * Connects on-prem to AWS storage
         * Useful for backups/DR
         * 3 types
-            * *Gateway-Cached Volumes* - Primary data in S3, local copy of hot data
-            * *Gateway-Stored Volumes* - Low-latency access to entire data set, backup in S3
+            * *Gateway-Cached Volumes* (cloud is primary) - Primary data in S3, local copy of hot data
+            * *Gateway-Stored Volumes* (cloud is backup) - Low-latency access to entire data set, backup in S3
                 * Must be provisioned up-front with local storage capable of the entire data set!
             * *Gatway Virtual Tape Library* - Backed by S3 or Glacier, iSCSI
                 * Virtual Tape Library (S3)

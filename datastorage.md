@@ -66,6 +66,31 @@
     * Access policies w/ IAM policy language
     
 # EBS
+* EBS volumes are block storage attacked to EC2 (one at a time)
+* Automatically replicated within single AZ
+* Snapshots
+    * Stored in S3, incrimental blocks changed copied
+    * First snapshot can take time
+    * Can be used to change EBS volume type (although, we can now use elastic volumes)
+* Volumes can be encrypted with KMS keys (snapshots also encrypted)
+* Levels
+    * General Purpose SSD (gp2)
+        * 99.999% availability
+        * 3 IOPs/GB with burst up to 3k IOPS
+    * Provisioned IOPS SSD (io1)
+        * Consistent performance
+    * Throughput Optimized HDD (st1)
+        * Througput-intensive workloads (high throughput)
+        * Use for Kafka
+    * Cold HDD (sc1)
+        * Low access
+    * EBS Magnetic (Last Generation)
+        * Low performance HDD
+* RAID = Redundant Array of Independent Disks
+    * RAID 0 – Striped, no redundancy, good performance
+    * RAID 1 – mirrored, redundancy
+    * RAID 5 – good for reads, bad for writes, AWS does not recommend ever putting RAID 5’s on EBS
+    * RAID 10 – Striped & Mirrored, good redundancy, good performance
 
 # Others
 

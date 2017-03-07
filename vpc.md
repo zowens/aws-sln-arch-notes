@@ -76,6 +76,13 @@
 * Strange restriction:
     * VPC cannot have CIDR in 10.0.0.0/8 range, except 10.0.0.0/16 and 10.1.0.0/16
 
+## CIDR Basics
+* IP address + Subnetmask
+* 192.168.100.14/24
+    * 24 leading 1 bits
+* X.X.X.X/Y => 2^(32-Y) addresses in the mask
+    * Greater the last number (mask), less IPs
+
 ## Links
 [Practical VPC Design](https://medium.com/aws-activate-startup-blog/practical-vpc-design-8412e1a18dcc)
 [Virtual Private Gateway](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html)

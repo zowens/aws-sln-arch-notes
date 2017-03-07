@@ -13,7 +13,7 @@ Because maybe you'll find this useful?
 * Cloud Migration and Hybrid Architecture
 
 ## Service-Specific Notes
-* EC2/[EBS](datastorage.md#EBS)
+* [EC2](ec2.md)/[EBS](datastorage.md#EBS)
 * Autoscaling/ELB
 * [VPC/VPN/Direct Connect](vpc.md)
 * IAM
